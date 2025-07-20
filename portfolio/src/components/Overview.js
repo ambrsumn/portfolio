@@ -49,7 +49,7 @@ const Overview = ({ onScrollTo }) => (
         {/* Profile Image with animated ring */}
         <div className="relative w-40 h-40 mb-2">
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 animate-spin-slow opacity-40" />
-            <img src="/amber.png" alt="Amber Sumn" className="w-40 h-40 object-cover rounded-full border-4 border-blue-700 shadow-xl relative z-10 bg-white" />
+            <img src="/amber.png" alt="Amber Suman" className="w-40 h-40 object-cover rounded-full border-4 border-blue-700 shadow-xl relative z-10 bg-white" />
         </div>
         {/* Social Links */}
         <div className="flex gap-6 justify-center mb-2">
