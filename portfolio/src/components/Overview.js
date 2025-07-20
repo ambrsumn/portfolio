@@ -66,7 +66,7 @@ const Overview = ({ onScrollTo }) => (
                 </a>
             ))}
         </div>
-        <h2 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mb-2 tracking-tight drop-shadow-lg">Amber Sumn</h2>
+        <h2 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mb-2 tracking-tight drop-shadow-lg">Amber Suman</h2>
         <p className="text-lg md:text-xl text-gray-200 max-w-2xl font-medium leading-relaxed">
             Full Stack Developer with 1+ years of experience building scalable web applications using <span className="font-semibold text-blue-400">Java</span>, <span className="font-semibold text-green-400">Spring Boot</span>, <span className="font-semibold text-green-300">Node.js</span>, <span className="font-semibold text-gray-200">Express.js</span>, <span className="font-semibold text-blue-300">React.js</span>, <span className="font-semibold text-blue-400">TypeScript</span>, and <span className="font-semibold text-yellow-300">SQL</span>.<br />
             Solved <span className="font-semibold text-pink-400">800+ DSA problems</span> across various coding platforms.<br />
