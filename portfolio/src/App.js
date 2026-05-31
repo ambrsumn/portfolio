@@ -42,7 +42,7 @@ function App() {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
     link.href = '/resume.pdf';
-    link.download = 'Amber_Sumn_Resume.pdf';
+    link.download = 'Amber_Suman_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

@@ -2,65 +2,41 @@ import React, { useState } from "react";
 
 const experiences = [
   {
+    company: "Tracxn Technologies",
+    location: "Bengaluru, KA",
+    role: "Software Engineer",
+    duration: "December 2025 – Present",
+    logo: "/tracxn.png",
+    type: "Full Time",
+    timeSpent: "5 months",
+    desc: [
+      "Designed and built Node.js-based orchestrator systems for Tracxn's core CrawlInfra platform, managing end-to-end crawler lifecycle including workflow execution, dependency resolution, retry strategies, failure recovery, and operational monitoring across distributed backend services.",
+      "Developed and onboarded legal case crawlers from scratch — conducted domain research and rate-limit analysis, designed crawl strategies, implemented retry and fault-tolerance mechanisms, and integrated crawlers into the orchestration pipeline for reliable, large-scale data acquisition across diverse legal sources.",
+      "Engineered a Node.js on-demand EC2 consumer to execute a 6-million-file data backfill — parallelized gzip decompression, staged and grouped records into an on-disk SQLite store, parsed data into the target schema, and published processed payloads to a downstream Kafka parsing topic owned by a partner team, enabling large-scale historical data backfill without disrupting live systems.",
+      "Architected and implemented an automated financial data acquisition pipeline to handle 250+ jobs per day, coordinating across multiple engineering teams to orchestrate crawler execution, data processing workflows, and operational visibility for Tracxn's financial data systems.",
+      "Built Kafka-driven asynchronous workflows enabling reliable, high-throughput communication between distributed crawl services, decoupling execution stages and improving pipeline stability for critical data operations.",
+      "Provisioned and managed AWS infrastructure — including S3, EC2, IAM roles, autoscaling, and deployment pipelines — to support scalable backend workflows and large-scale data processing for crawl infrastructure systems.",
+      "Developed RESTful APIs for internal transaction and workflow management modules, enabling cross-team integrations and standardizing access to crawl execution and monitoring capabilities.",
+    ],
+  },
+  {
     company: "Amazon",
     location: "Bengaluru, KA",
     role: "SDE I",
-    duration: "July 2024 – Present",
+    duration: "May 2025 – December 2025",
     logo: "/amazon.png",
     type: "Full Time",
-    timeSpent: "3.5 months",
+    timeSpent: "8 months",
     desc: [
-      "Driving backend development for the Refill Reminder project within Amazon Pharmacy, a notification system that reminds customers via email and phone to repurchase essential pharmacy items, enhancing user engagement and retention.",
-      "Successfully led a major JDK migration, addressing Amazon Pharmacy’s most critical technical debt pending for over a year, resulting in improved application stability, maintainability, and performance.",
-    ],
-  },
-
-  {
-    company: "Entelika Consulting and IT Services",
-    location: "Mysuru, KA",
-    role: "Software Engineer",
-    duration: "June 2024 – June 2025",
-    logo: "/entelika.png",
-    type: "Full Time",
-    timeSpent: "1.1 years",
-    desc: [
-      "Spearheaded full-stack development of TieOpp, an AI-powered internship platform connecting students, enterprises, and colleges; collaborated in Agile sprints to deliver scalable, user-centric solutions.",
-      "Developed and maintained backend APIs using Node.js, Express.js, and MySQL, improving data reliability and reducing sync latency by 30%.",
-      "Built responsive, accessible UIs using React, TypeScript, and Tailwind CSS, optimizing frontend performance and improving student engagement metrics.",
-      "Added security by implementing robust authentication and authorization mechanisms using JWT and OAuth2.",
-    ],
-  },
-  {
-    company: "Fidelity Investments",
-    location: "Bengaluru, KA",
-    role: "Full Stack Engineer Intern (Winter)",
-    duration: "January 2024 – June 2024",
-    logo: "/fidelity.jpg",
-    type: "Internship",
-    timeSpent: "5 months",
-    desc: [
-      "Developed an EDI Inspector prototype using React.js and Express.js, enabling enhanced client-side data validation and improving inspection workflows.",
-      "Wrote detailed JUnit test suites that increased test coverage from 27% to 92%, significantly improving code reliability and maintainability.",
-    ],
-  },
-  {
-    company: "Fidelity Investments",
-    location: "Bengaluru, KA",
-    role: "Full Stack Engineer Intern (Summer)",
-    duration: "July 2023 – September 2023",
-    logo: "/fidelity.jpg",
-    type: "Internship",
-    timeSpent: "2 months",
-    desc: [
-      "Built an internal interactive dashboard for Fidelity clients using React.js, enabling seamless data visualization and improved decision-making for internal stakeholders.",
-      "Implemented a feature to export JSON data to Excel with automatic column name mapping using Spring Boot, streamlining reporting workflows.",
+      "Engineered backend APIs for the Refill Reminder system in Amazon Pharmacy using Java and Spring Boot, enabling automated email/SMS/IVR notifications that increased prescription refills by 28%.",
+      "Spearheaded modernization of a legacy prescription verification service by migrating the codebase to Java JDK 17, eliminating a year-long critical tech debt.",
+      "Co-developed Code Guardian, an AWS-based static analysis and hybrid CI/CD platform integrated across five major business pipelines, reducing team PE risk by 50%.",
     ],
   },
 ];
 
 const FILTERS = [
   { label: "All", value: "All" },
-  { label: "Internships", value: "Internship" },
   { label: "Full Time", value: "Full Time" },
 ];
 

@@ -6,24 +6,8 @@ const education = [
         location: 'Mysore, Karnataka',
         degree: 'Bachelor of Engineering - Information Science and Engineering',
         score: 'CGPA: 8.00',
-        year: '2020 - 2024',
+        year: '2020 – 2024',
         logo: '/nie.svg',
-    },
-    {
-        institution: 'Open Minds A Birla School',
-        location: 'Patna, Bihar',
-        degree: 'Class 12 (CBSE Board)',
-        score: 'Percentage: 83.4',
-        year: '2019',
-        logo: '/openminds.jpg',
-    },
-    {
-        institution: 'Open Minds A Birla School',
-        location: 'Patna, Bihar',
-        degree: 'Class 10 (CBSE Board)',
-        score: 'CGPA: 10.00',
-        year: '2017',
-        logo: '/openminds.jpg',
     },
 ];
 
@@ -70,4 +54,4 @@ const Education = () => (
     </div>
 );
 
-export default Education; 
+export default Education;

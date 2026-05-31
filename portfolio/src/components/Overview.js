@@ -2,13 +2,13 @@ import React from 'react';
 
 const techStack = [
     { name: 'Node.js', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-    { name: 'React.js', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
     { name: 'JavaScript', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
-    { name: 'TypeScript', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+    { name: 'Kafka', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg' },
     { name: 'Java', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
     { name: 'Spring Boot', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg' },
-    { name: 'Angular', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
-    { name: 'SQL', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+    { name: 'AWS', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg' },
+    { name: 'Redis', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg' },
+    { name: 'SQL', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
     { name: 'MongoDB', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
 ];
 
@@ -22,7 +22,7 @@ const socialLinks = [
     },
     {
         name: 'LeetCode',
-        url: 'https://leetcode.com/u/czech_pirc/',
+        url: 'https://leetcode.com/u/ambrsumn/',
         icon: (
             <svg className="w-7 h-7" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g>
@@ -68,10 +68,11 @@ const Overview = ({ onScrollTo }) => (
         </div>
         <h2 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mb-2 tracking-tight drop-shadow-lg">Amber Suman</h2>
         <p className="text-lg md:text-xl text-gray-200 max-w-2xl font-medium leading-relaxed">
-            Full Stack Developer with 1+ years of experience building scalable web applications using <span className="font-semibold text-blue-400">Java</span>, <span className="font-semibold text-green-400">Spring Boot</span>, <span className="font-semibold text-green-300">Node.js</span>, <span className="font-semibold text-gray-200">Express.js</span>, <span className="font-semibold text-blue-300">React.js</span>, <span className="font-semibold text-blue-400">TypeScript</span>, and <span className="font-semibold text-yellow-300">SQL</span>.<br />
-            Solved <span className="font-semibold text-pink-400">800+ DSA problems</span> across various coding platforms.<br />
-            Proficient in designing RESTful APIs, integrating SQL databases, and deploying secure backend services.<br />
-            Skilled at building responsive frontends and strong in System Design.
+            Backend Software Engineer with 2 years of experience designing distributed and event-driven systems at scale.<br />
+            Currently part of the core <span className="font-semibold text-blue-400">CrawlInfra</span> team at <span className="font-semibold text-purple-400">Tracxn Technologies</span>, building <span className="font-semibold text-green-300">Kafka</span>-driven orchestrators, backend data pipelines, and internal <span className="font-semibold text-yellow-300">REST APIs</span>.<br />
+            Previously SDE at Amazon. Interned twice as a Full Stack Developer at Fidelity Investments.<br />
+            Proficient in <span className="font-semibold text-green-300">Node.js</span>, <span className="font-semibold text-yellow-300">JavaScript</span>, <span className="font-semibold text-green-400">Kafka</span>, <span className="font-semibold text-blue-300">SQL</span>, and <span className="font-semibold text-orange-400">AWS</span>. Strong foundation in backend system design and scalable service architecture.<br />
+            Solved <span className="font-semibold text-pink-400">1000+ DSA problems</span> across LeetCode.
         </p>
         {/* Tech stack icons */}
         <div className="flex flex-wrap justify-center gap-6 mt-4">
@@ -107,4 +108,4 @@ const Overview = ({ onScrollTo }) => (
     </div>
 );
 
-export default Overview; 
+export default Overview;

@@ -1,78 +1,31 @@
 import React, { useState } from 'react';
 
 const techIcons = {
-    'Node.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
-    'Express.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+    'Java': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
     'Spring Boot': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
-    'React': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-    'React.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-    'TypeScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    'JPA': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
+    'REST APIs': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
     'MySQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
-    'Tailwind CSS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+    'JWT': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
     'Git': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
-    'Socket.io': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg',
-    'HTML': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-    'CSS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
-    'JavaScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', // fallback, not official
-    'ExcelJS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/file-type-excel.svg', // fallback, not official
-    'Excel': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/file-type-excel.svg', // fallback, not official
 };
 
 const projects = [
     {
         name: 'InfraTrack',
         tech: [
-            'Node.js', 'Express.js', 'Spring Boot', 'React', 'TypeScript', 'MySQL', 'Git'
+            'Java', 'Spring Boot', 'JPA', 'REST APIs', 'MySQL', 'JWT', 'Git'
         ],
-        // Construction/blueprint icon
         logo: 'https://cdn.jsdelivr.net/gh/feathericons/feather/icons/briefcase.svg',
-        live: 'https://infratrack-frontend-v2.vercel.app/Store',
         github: [
-            { label: 'Express.js + React', url: 'https://github.com/ambrsumn/InfraTrack-nodejs' },
-            { label: 'Springboot + React', url: 'https://github.com/ambrsumn/Infra-Track' }
+            { label: 'GitHub', url: 'https://github.com/ambrsumn/Infra-Track' }
         ],
         desc: [
-            'Designed and developed InfraTrack, a full-stack project management platform for civil engineering teams to handle order placement, negotiation, and delivery tracking.',
-            'Implemented RESTful APIs, JWT authentication, and role-based access with Spring Boot, ensuring secure workflows across multiple user roles.',
-            'Adopted by 20+ engineers and staff at EHDJV, improving process visibility and reducing manual coordination through real-time status updates.',
-            'Integrated real-time notifications and activity logs for seamless team collaboration.'
+            'Designed and developed a backend-driven project management platform with RESTful APIs for workflow management, order placement, negotiation, and real-time delivery tracking.',
+            'Implemented JWT authentication and role-based access control with Spring Boot, enabling secure, multi-role workflows across the system.',
+            'Modelled normalized relational schemas in MySQL to support multi-entity workflows, adopted by 20+ engineers and staff at EHDJV, eliminating manual coordination overhead.',
         ]
     },
-    {
-        name: 'ConvoHub',
-        tech: [
-            'React.js', 'Express.js', 'Socket.io', 'MySQL', 'Node.js', 'Git'
-        ],
-        // Chat/message icon
-        logo: 'https://cdn.jsdelivr.net/gh/feathericons/feather/icons/message-circle.svg',
-        github: [
-            { label: 'Frontend', url: 'https://github.com/ambrsumn/ConvoHub-frontend' },
-            { label: 'Backend', url: 'https://github.com/ambrsumn/ConvoHub-backend' }
-        ],
-        desc: [
-            'A full-stack chat application with real-time personal messaging enabled through Socket.io, providing a seamless and responsive user experience.',
-            'Implemented a secure, custom email-based authentication system (no third-party services), with privacy-focused features such as invite-only group additions and controlled one-on-one communication.',
-            'Supports group and private chats, with message history and notifications.',
-            'Built with a modular architecture for easy feature expansion and maintenance.'
-        ]
-    },
-    {
-        name: 'SQLBuilder',
-        tech: [
-            'TypeScript', 'Excel', 'Node.js',
-        ],
-        // Database/SQL icon
-        logo: 'https://cdn.jsdelivr.net/gh/feathericons/feather/icons/database.svg',
-        github: [
-            { label: 'GitHub', url: 'https://github.com/ambrsumn/SQLBuilder' }
-        ],
-        desc: [
-            'Created a tool that generates SQL queries from uploaded Excel data, streamlining database population and migration tasks.',
-            'Supports multiple SQL dialects and provides instant preview and download of generated queries.',
-            'Features a user-friendly interface for mapping Excel columns to database fields.',
-            'Ideal for developers and DBAs looking to automate repetitive SQL writing from spreadsheet data.'
-        ]
-    }
 ];
 
 const linkIcons = {
@@ -169,4 +122,4 @@ const Projects = () => {
     );
 };
 
-export default Projects; 
+export default Projects;
