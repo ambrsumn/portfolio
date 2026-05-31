@@ -23,8 +23,6 @@ function App() {
   const [activeTab, setActiveTab] = useState('overview');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const mainRef = useRef(null);
-  const projectsRef = useRef(null);
-  const contactRef = useRef(null);
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -72,22 +70,6 @@ function App() {
     }
   };
 
-  const renderTab = () => {
-    switch (activeTab) {
-      case 'overview':
-        return <Overview onScrollTo={handleScrollTo} />;
-      case 'projects':
-        return <Projects />;
-      case 'experience':
-        return <Experience theme={theme} />;
-      case 'education':
-        return <Education />;
-      case 'contact':
-        return <Contact />;
-      default:
-        return null;
-    }
-  };
 
   return (
     <div className={
